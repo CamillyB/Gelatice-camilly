@@ -1,0 +1,207 @@
+body {
+    color: #000;
+    background-color: #fff6c784;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*paleta
+#85191d
+#9c1212
+#ffae00
+#d67a01
+#FFF6C7
+#016464
+#003c4b
+#37bdbd
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    display: block; /* Faz com que o link ocupe toda a área do <li> */
+    padding: 10px 15px; /* Adiciona padding interno para aumentar a área clicável */
+}
+ul li a{
+    color: #ffffff;
+}
+ul {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    list-style-type: none;
+    align-items: center;
+    background-color: #85191d;
+    height: 50px;
+    box-shadow: 0px 0px 7px 0px #9c1212;
+    padding: 0 10px; /* Adiciona um pouco de padding ao redor da lista */
+}
+
+ul li {
+    margin-left: 15px; /* Adiciona espaçamento entre os itens */
+}
+
+ul li a:hover {
+    background-color: #9c1212; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+    border-radius: 10px; /* Arredonda os cantos do fundo colorido */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+}
+
+.introducao {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1cm;
+    height: 13.7cm;
+}
+
+.breve-introdução {
+    width: 60%; /* Ajuste conforme necessário */
+}
+
+.texto-direita {
+    width: 35%; /* Ajuste conforme necessário */
+    margin-right: 3cm; /* Espaçamento entre os textos | da pra aproxima-los*/
+}
+
+.texto-direita h2 {
+    margin-top: 0;
+}
+
+img{
+    height: 10cm;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column; /* Coloca o título e os contêineres em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    height: 16cm;
+    background-color: #ffedc7;
+}
+
+.servico h1 {
+    text-align: center; /* Centraliza o texto do título */
+    margin-bottom: 20px; /* Espaçamento entre o título e os contêineres */
+}
+
+.conteiner-wrapper {
+    display: flex; /* Coloca os contêineres lado a lado */
+    justify-content: center; /* Centraliza os contêineres horizontalmente */
+    gap: 20px; /* Espaçamento entre os contêineres */
+}
+
+.conteiner {
+    background-color: #94292c;
+    width: 350px;
+    height: 350px;
+    padding: 20px; /* Espaçamento interno */
+    border: solid 2px #85191d;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.conteiner h2 {
+    margin-bottom: 10px; /* Espaçamento entre o título e o texto */
+    font-size: 25px;
+    text-decoration: solid 1px #000;
+}
+
+.conteiner p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+
+.feedback {
+    padding: 20px;
+    background-color: #ffedc783;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.feedback-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.feedback-track {
+    display: flex;
+    animation: scroll 16s linear infinite;
+}
+
+.feedback-card {
+    background-color: #fea3a6;
+    border: 1px solid #ff9191;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0 10px;
+    width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+/* Animação do carrossel */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.contato {
+    padding: 20px;
+    background-color: #ffedc7;
+    color: #000;
+    text-align: center;
+}
+
+.contato h1 {
+    margin-bottom: 20px;
+}
+
+.contato-info {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.contato-info p {
+    margin: 10px 0;
+}
+
+.contato-info a {
+    color: #016464;
+    text-decoration: none;
+}
+
+.contato-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
